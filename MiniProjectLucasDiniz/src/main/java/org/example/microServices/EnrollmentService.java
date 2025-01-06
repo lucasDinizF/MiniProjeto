@@ -25,10 +25,11 @@ public class EnrollmentService {
 
                         enrollments.computeIfAbsent(student.getId(), k -> new ArrayList<>()).add(discipline);
 
+                        return true;
+
                     }
                 }
             }
-            return true;
         }
         return false;
     }
